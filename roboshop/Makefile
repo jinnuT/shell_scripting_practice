@@ -14,7 +14,7 @@ payment:  			## Install payment Component
 	@bash payment.sh
 mongodb:  			## Install mongodb Component
 	@bash mongodb.sh
-redis:  			## Install redis Component
+redis:  				## Install redis Component
 	@bash redis.sh
 rbbitmq: 			## Install rbbitmq Component
 	@bash rbbitmq.sh
