@@ -13,19 +13,19 @@ STAT_CHECK(){
 }
 
 PRINT(){
-   echo -n -e "$1"
+   echo -n -e "$1\t\t"
 }
 
-PRINT "Installing Nginx\t..."
+PRINT "Installing Nginx"
 yum install nginx -y &>>$LOG
 STAT_CHECK $?
 
 
-PRINT "Enabling Nginx\t\t..."
+PRINT "Enabling Nginx"
 systemctl enable nginx &>>$LOG
 STAT_CHECK $?
 
 
-PRINT "Starting Nginx\t\t..."
+PRINT "Starting Nginx"
 systemctl start nginx &>>$LOG
 STAT_CHECK $?
