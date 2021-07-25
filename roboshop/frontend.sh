@@ -13,7 +13,7 @@ STAT_CHECK(){
 }
 
 PRINT(){
-   echo -n -e "$1\t\t"
+   echo -n -e "$1"
 }
 
 PRINT "Installing Nginx\t..."
