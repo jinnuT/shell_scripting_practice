@@ -20,6 +20,7 @@ rbbitmq: 			## Install rbbitmq Component
 	@bash rbbitmq.sh
 mysql:				## Install mysql Component
 	@bash mysql.sh
-databases: mongodb rbbitmq mysql redis  ## Install All Databases
+databases: 			## Install All Databases
+databases: mongodb rbbitmq mysql redis
 
 
